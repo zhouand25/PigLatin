@@ -3,13 +3,14 @@ import java.util.Scanner;
 
 public class PigLatin {
     public static void main(String[] args) {
-        System.out.print("Welcome to ROMECESAR, the Pig Latin to English Translator!");
+        System.out.println("Welcome to ROMECESAR, the Pig Latin to English Translator!");
         System.out.print("Please lowercase your first letter.");
         System.out.print("What word do you want translated from English to PigLatin: ");
         Scanner detect=new Scanner(System.in);
         String input=detect.nextLine();
         String output="";
         
+        //Conditional to check for vowel first letter
         if(input.charAt(0)=='a' || input.charAt(0)=='e' || input.charAt(0)=='i' || input.charAt(0)=='o' || input.charAt(0)=='u') {
             output+=input+"ay";
         } else {
