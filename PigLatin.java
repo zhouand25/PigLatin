@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class PigLatin {
     public static void main(String[] args) {
+        System.out.print("Welcome to ROMECESAR, the Pig Latin to English Translator!");
+        System.out.print("Please lowercase your first letter.");
         System.out.print("What word do you want translated from English to PigLatin: ");
         Scanner detect=new Scanner(System.in);
         String input=detect.nextLine();
@@ -16,6 +18,7 @@ public class PigLatin {
             }
             output+=input.charAt(0)+"ay";
         }
-        System.out.print(output); 
+        System.out.println("The Pig Latin Translation: "+output); 
+        System.out.print("yebay!");
     } 
 }
